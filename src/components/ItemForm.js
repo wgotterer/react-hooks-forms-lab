@@ -3,7 +3,7 @@ import { v4 as uuid } from "uuid";
 
 function ItemForm(props) {
   return (
-    <form className="NewItem">
+    <form onSubmit={onItemFormSubmit} className="NewItem">
       <label>
         Name:
         <input type="text" name="name" />
